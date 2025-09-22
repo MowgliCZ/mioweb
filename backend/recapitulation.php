@@ -24,8 +24,8 @@ $order = $_SESSION['order'];
   <tr><th>Jméno a příjmení</th><td><?= htmlspecialchars($order['name']) ?></td></tr>
   <tr><th>E-mail</th><td><?= htmlspecialchars($order['email']) ?></td></tr>
   <tr><th>Produkt</th><td><?= htmlspecialchars($order['product_name']) ?></td></tr>
-  <tr><th>Cena za kus (CZK)</th><td><?= number_format($order['priceCZK'], 2, ',', ' ') ?> Kč</td></tr>
-  <tr><th>Počet kusů</th><td><?= $order['quantity'] ?></td></tr>
+  <tr><th>Cena za měsíc (CZK)</th><td><?= number_format($order['priceCZK'], 2, ',', ' ') ?> Kč</td></tr>
+  <tr><th>Počet měsíců</th><td><?= $order['quantity'] ?></td></tr>
   <tr><th>Celkem bez DPH (CZK)</th><td><?= number_format($order['subtotal'], 2, ',', ' ') ?> Kč</td></tr>
   <tr><th>DPH (21 %)</th><td><?= number_format($order['subtotal'] * 0.21, 2, ',', ' ') ?> Kč</td></tr>
   <tr><th>Celkem s DPH (CZK)</th><td id="priceCZK"><?= number_format($order['totalWithTax'], 2, ',', ' ') ?> Kč</td></tr>

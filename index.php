@@ -26,10 +26,10 @@ $products = include './backend/products.php';
       <td><input type="email" name="email" id="email" required /></td>
     </tr>
     <tr>
-      <th><label for="product">Produkt:</label></th>
+      <th><label for="product">Členství:</label></th>
       <td>
         <select name="product" id="product" required>
-          <option value="">-- Vyberte produkt --</option>
+          <option value="">-- Vyberte členství --</option>
           <?php foreach ($products as $key => $product): ?>
             <option value="<?= htmlspecialchars($key) ?>" data-price="<?= $product['price'] ?>">
               <?= htmlspecialchars($product['name']) ?>
@@ -39,11 +39,11 @@ $products = include './backend/products.php';
       </td>
     </tr>
     <tr>
-      <th>Cena za kus:</th>
+      <th>Cena za měsíc:</th>
       <td><span id="pricePerUnit">0,00 Kč</span></td>
     </tr>
     <tr>
-      <th><label for="quantity">Počet kusů:</label></th>
+      <th><label for="quantity">Počet měsíců:</label></th>
       <td><input type="number" name="quantity" id="quantity" min="1" value="1" required /></td>
     </tr>
     <tr>

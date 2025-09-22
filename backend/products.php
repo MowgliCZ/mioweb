@@ -1,15 +1,15 @@
 <?php
 return [
   '1' => [
-    'name' => 'Prsten z chirurgické oceli',
+    'name' => 'Bronzové členství',
     'price' => 250,
   ],
   '2' => [
-    'name' => 'Prsten stříbrný',
+    'name' => 'Stříbrné členství',
     'price' => 400,
   ],
   '3' => [
-    'name' => 'Prsten zlatý',
+    'name' => 'Zlaté členství',
     'price' => 590,
   ],
 ];
